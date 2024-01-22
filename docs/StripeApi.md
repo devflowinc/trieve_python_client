@@ -1,4 +1,4 @@
-# arguflow.StripeApi
+# trieve_python_client.StripeApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,21 +19,21 @@ Method | HTTP request | Description
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.StripeApi(api_client)
+    api_instance = trieve_python_client.StripeApi(api_client)
     subscription_id = 'subscription_id_example' # str | id of the subscription you want to cancel
 
     try:
@@ -82,21 +82,21 @@ No authorization required
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.StripeApi(api_client)
+    api_instance = trieve_python_client.StripeApi(api_client)
     plan_id = 'plan_id_example' # str | id of the plan you want to subscribe to
     organization_id = 'organization_id_example' # str | id of the organization you want to subscribe to the plan
 
@@ -147,22 +147,22 @@ No authorization required
 
 
 ```python
-import arguflow
-from arguflow.models.stripe_plan import StripePlan
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.stripe_plan import StripePlan
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.StripeApi(api_client)
+    api_instance = trieve_python_client.StripeApi(api_client)
 
     try:
         api_response = api_instance.get_all_plans()
@@ -209,21 +209,21 @@ No authorization required
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.StripeApi(api_client)
+    api_instance = trieve_python_client.StripeApi(api_client)
     subscription_id = 'subscription_id_example' # str | id of the subscription you want to update
     plan_id = 'plan_id_example' # str | id of the plan you want to subscribe to
 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.user_role import UserRole
+from trieve_python_client.models.user_role import UserRole
 
 class TestUserRole(unittest.TestCase):
     """UserRole unit test stubs"""

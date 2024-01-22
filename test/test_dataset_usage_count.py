@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.dataset_usage_count import DatasetUsageCount
+from trieve_python_client.models.dataset_usage_count import DatasetUsageCount
 
 class TestDatasetUsageCount(unittest.TestCase):
     """DatasetUsageCount unit test stubs"""

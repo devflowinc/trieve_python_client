@@ -1,4 +1,4 @@
-# arguflow.ChunkApi
+# trieve_python_client.ChunkApi
 
 All URIs are relative to *http://localhost*
 
@@ -28,24 +28,24 @@ create_chunk  Create a new chunk. If the chunk has the same tracking_id as an ex
 
 
 ```python
-import arguflow
-from arguflow.models.create_chunk_data import CreateChunkData
-from arguflow.models.return_created_chunk import ReturnCreatedChunk
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.create_chunk_data import CreateChunkData
+from trieve_python_client.models.return_created_chunk import ReturnCreatedChunk
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
-    create_chunk_data = arguflow.CreateChunkData() # CreateChunkData | JSON request payload to create a new chunk (chunk)
+    api_instance = trieve_python_client.ChunkApi(api_client)
+    create_chunk_data = trieve_python_client.CreateChunkData() # CreateChunkData | JSON request payload to create a new chunk (chunk)
 
     try:
         # create_chunk
@@ -98,24 +98,24 @@ get_suggested_queries  This endpoint will generate 3 suggested queries based off
 
 
 ```python
-import arguflow
-from arguflow.models.suggested_queries_request import SuggestedQueriesRequest
-from arguflow.models.suggested_queries_response import SuggestedQueriesResponse
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.suggested_queries_request import SuggestedQueriesRequest
+from trieve_python_client.models.suggested_queries_response import SuggestedQueriesResponse
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
-    suggested_queries_request = arguflow.SuggestedQueriesRequest() # SuggestedQueriesRequest | JSON request payload to get alternative suggested queries
+    api_instance = trieve_python_client.ChunkApi(api_client)
+    suggested_queries_request = trieve_python_client.SuggestedQueriesRequest() # SuggestedQueriesRequest | JSON request payload to get alternative suggested queries
 
     try:
         # get_suggested_queries
@@ -168,21 +168,21 @@ delete_chunk  Delete a chunk by its id. If deleting a root chunk which has a col
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
+    api_instance = trieve_python_client.ChunkApi(api_client)
     chunk_id = 'chunk_id_example' # str | id of the chunk you want to delete
 
     try:
@@ -234,21 +234,21 @@ delete_chunk_by_tracking_id  Delete a chunk by tracking_id. This is useful for w
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
+    api_instance = trieve_python_client.ChunkApi(api_client)
     tracking_id = 'tracking_id_example' # str | tracking_id of the chunk you want to delete
 
     try:
@@ -300,23 +300,23 @@ generate_off_chunks  This endpoint exists as an alternative to the topic+message
 
 
 ```python
-import arguflow
-from arguflow.models.generate_chunks_request import GenerateChunksRequest
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.generate_chunks_request import GenerateChunksRequest
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
-    generate_chunks_request = arguflow.GenerateChunksRequest() # GenerateChunksRequest | JSON request payload to perform RAG on some chunks (chunks)
+    api_instance = trieve_python_client.ChunkApi(api_client)
+    generate_chunks_request = trieve_python_client.GenerateChunksRequest() # GenerateChunksRequest | JSON request payload to perform RAG on some chunks (chunks)
 
     try:
         # generate_off_chunks
@@ -367,22 +367,22 @@ get_chunk  Get a singular chunk by id.
 
 
 ```python
-import arguflow
-from arguflow.models.chunk_metadata import ChunkMetadata
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.chunk_metadata import ChunkMetadata
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
+    api_instance = trieve_python_client.ChunkApi(api_client)
     chunk_id = 'chunk_id_example' # str | Id of the chunk you want to fetch.
 
     try:
@@ -436,22 +436,22 @@ get_chunk_by_tracking_id  Get a singular chunk by tracking_id. This is useful fo
 
 
 ```python
-import arguflow
-from arguflow.models.chunk_metadata import ChunkMetadata
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.chunk_metadata import ChunkMetadata
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
+    api_instance = trieve_python_client.ChunkApi(api_client)
     tracking_id = 'tracking_id_example' # str | tracking_id of the chunk you want to fetch
 
     try:
@@ -505,24 +505,24 @@ get_recommended_chunks  Get recommendations of chunks similar to the chunks in t
 
 
 ```python
-import arguflow
-from arguflow.models.chunk_metadata_with_file_data import ChunkMetadataWithFileData
-from arguflow.models.recommend_chunks_request import RecommendChunksRequest
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.chunk_metadata_with_file_data import ChunkMetadataWithFileData
+from trieve_python_client.models.recommend_chunks_request import RecommendChunksRequest
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
-    recommend_chunks_request = arguflow.RecommendChunksRequest() # RecommendChunksRequest | JSON request payload to get recommendations of chunks similar to the chunks in the request
+    api_instance = trieve_python_client.ChunkApi(api_client)
+    recommend_chunks_request = trieve_python_client.RecommendChunksRequest() # RecommendChunksRequest | JSON request payload to get recommendations of chunks similar to the chunks in the request
 
     try:
         # get_recommended_chunks
@@ -575,24 +575,24 @@ search  This route provides the primary search functionality for the API. It can
 
 
 ```python
-import arguflow
-from arguflow.models.search_chunk_data import SearchChunkData
-from arguflow.models.search_chunk_query_response_body import SearchChunkQueryResponseBody
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.search_chunk_data import SearchChunkData
+from trieve_python_client.models.search_chunk_query_response_body import SearchChunkQueryResponseBody
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
-    search_chunk_data = arguflow.SearchChunkData() # SearchChunkData | JSON request payload to semantically search for chunks (chunks)
+    api_instance = trieve_python_client.ChunkApi(api_client)
+    search_chunk_data = trieve_python_client.SearchChunkData() # SearchChunkData | JSON request payload to semantically search for chunks (chunks)
 
     try:
         # search
@@ -645,23 +645,23 @@ update_chunk  Update a chunk. If you try to change the tracking_id of the chunk 
 
 
 ```python
-import arguflow
-from arguflow.models.update_chunk_data import UpdateChunkData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.update_chunk_data import UpdateChunkData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
-    update_chunk_data = arguflow.UpdateChunkData() # UpdateChunkData | JSON request payload to update a chunk (chunk)
+    api_instance = trieve_python_client.ChunkApi(api_client)
+    update_chunk_data = trieve_python_client.UpdateChunkData() # UpdateChunkData | JSON request payload to update a chunk (chunk)
 
     try:
         # update_chunk
@@ -712,23 +712,23 @@ update_chunk_by_tracking_id  Update a chunk by tracking_id. This is useful for w
 
 
 ```python
-import arguflow
-from arguflow.models.update_chunk_by_tracking_id_data import UpdateChunkByTrackingIdData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.update_chunk_by_tracking_id_data import UpdateChunkByTrackingIdData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkApi(api_client)
-    update_chunk_by_tracking_id_data = arguflow.UpdateChunkByTrackingIdData() # UpdateChunkByTrackingIdData | JSON request payload to update a chunk by tracking_id (chunks)
+    api_instance = trieve_python_client.ChunkApi(api_client)
+    update_chunk_by_tracking_id_data = trieve_python_client.UpdateChunkByTrackingIdData() # UpdateChunkByTrackingIdData | JSON request payload to update a chunk by tracking_id (chunks)
 
     try:
         # update_chunk_by_tracking_id

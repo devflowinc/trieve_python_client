@@ -1,4 +1,4 @@
-# arguflow.ChunkCollectionApi
+# trieve_python_client.ChunkCollectionApi
 
 All URIs are relative to *http://localhost*
 
@@ -27,24 +27,24 @@ add_bookmark  Route to add a bookmark. Think of a bookmark as a chunk which is a
 
 
 ```python
-import arguflow
-from arguflow.models.add_chunk_to_collection_data import AddChunkToCollectionData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.add_chunk_to_collection_data import AddChunkToCollectionData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
     collection_id = 'collection_id_example' # str | Id of the collection to add the chunk to as a bookmark
-    add_chunk_to_collection_data = arguflow.AddChunkToCollectionData() # AddChunkToCollectionData | JSON request payload to add a chunk to a collection (bookmark it)
+    add_chunk_to_collection_data = trieve_python_client.AddChunkToCollectionData() # AddChunkToCollectionData | JSON request payload to add a chunk to a collection (bookmark it)
 
     try:
         # add_bookmark
@@ -96,24 +96,24 @@ create_chunk_collection  Create a new chunk_collection. Think of this as analogo
 
 
 ```python
-import arguflow
-from arguflow.models.chunk_collection import ChunkCollection
-from arguflow.models.create_chunk_collection_data import CreateChunkCollectionData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.chunk_collection import ChunkCollection
+from trieve_python_client.models.create_chunk_collection_data import CreateChunkCollectionData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
-    create_chunk_collection_data = arguflow.CreateChunkCollectionData() # CreateChunkCollectionData | JSON request payload to cretea a chunkCollection
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
+    create_chunk_collection_data = trieve_python_client.CreateChunkCollectionData() # CreateChunkCollectionData | JSON request payload to cretea a chunkCollection
 
     try:
         # create_chunk_collection
@@ -166,21 +166,21 @@ delete_bookmark  Route to delete a bookmark. Think of a bookmark as a chunk whic
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
     collection_id = 'collection_id_example' # str | Id of the collection to remove the bookmark'ed chunk from
     bookmark_id = 'bookmark_id_example' # str | Id of the bookmark to remove
 
@@ -234,21 +234,21 @@ delete_chunk_collection  This will delete a chunk_collection. This will not dele
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
     collection_id = 'collection_id_example' # str | Id of the chunk_collection to delete
 
     try:
@@ -300,22 +300,22 @@ get_all_bookmarks  Route to get all bookmarks for a collection. Think of a bookm
 
 
 ```python
-import arguflow
-from arguflow.models.bookmark_data import BookmarkData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.bookmark_data import BookmarkData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
     collection_id = 'collection_id_example' # str | The id of the collection to get the chunks from
     page = 56 # int | The page of chunks to get from the collection
 
@@ -369,24 +369,24 @@ No authorization required
 
 
 ```python
-import arguflow
-from arguflow.models.bookmark_collection_result import BookmarkCollectionResult
-from arguflow.models.get_collections_for_chunks_data import GetCollectionsForChunksData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.bookmark_collection_result import BookmarkCollectionResult
+from trieve_python_client.models.get_collections_for_chunks_data import GetCollectionsForChunksData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
-    get_collections_for_chunks_data = arguflow.GetCollectionsForChunksData() # GetCollectionsForChunksData | JSON request payload to get the collections that a chunk is in
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
+    get_collections_for_chunks_data = trieve_python_client.GetCollectionsForChunksData() # GetCollectionsForChunksData | JSON request payload to get the collections that a chunk is in
 
     try:
         api_response = api_instance.get_collections_chunk_is_in(get_collections_for_chunks_data)
@@ -438,22 +438,22 @@ get_current_user_collections  Fetch the collections which belong to the currentl
 
 
 ```python
-import arguflow
-from arguflow.models.collection_data import CollectionData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.collection_data import CollectionData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
     page = 56 # int | The page of collections to fetch
 
     try:
@@ -507,22 +507,22 @@ get_user_collections  Fetch the collections which belong to a user specified by 
 
 
 ```python
-import arguflow
-from arguflow.models.collection_data import CollectionData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.collection_data import CollectionData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
     user_id = 'user_id_example' # str | The id of the user to fetch collections for.
     page = 56 # int | The page of collections to fetch. Each page contains 10 collections. Support for custom page size is coming soon.
 
@@ -578,24 +578,24 @@ collection_search  This route allows you to search only within a collection. Thi
 
 
 ```python
-import arguflow
-from arguflow.models.search_collections_data import SearchCollectionsData
-from arguflow.models.search_collections_result import SearchCollectionsResult
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.search_collections_data import SearchCollectionsData
+from trieve_python_client.models.search_collections_result import SearchCollectionsResult
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
-    search_collections_data = arguflow.SearchCollectionsData() # SearchCollectionsData | JSON request payload to semantically search a collection
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
+    search_collections_data = trieve_python_client.SearchCollectionsData() # SearchCollectionsData | JSON request payload to semantically search a collection
 
     try:
         # collection_search
@@ -648,23 +648,23 @@ update_chunk_collection  Update a chunk_collection. Think of this as analogous t
 
 
 ```python
-import arguflow
-from arguflow.models.update_chunk_collection_data import UpdateChunkCollectionData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.update_chunk_collection_data import UpdateChunkCollectionData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.ChunkCollectionApi(api_client)
-    update_chunk_collection_data = arguflow.UpdateChunkCollectionData() # UpdateChunkCollectionData | JSON request payload to update a chunkCollection
+    api_instance = trieve_python_client.ChunkCollectionApi(api_client)
+    update_chunk_collection_data = trieve_python_client.UpdateChunkCollectionData() # UpdateChunkCollectionData | JSON request payload to update a chunkCollection
 
     try:
         # update_chunk_collection

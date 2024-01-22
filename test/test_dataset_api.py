@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.dataset_api import DatasetApi
+from trieve_python_client.api.dataset_api import DatasetApi
 
 
 class TestDatasetApi(unittest.TestCase):

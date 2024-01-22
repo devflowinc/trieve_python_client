@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.notifications_api import NotificationsApi
+from trieve_python_client.api.notifications_api import NotificationsApi
 
 
 class TestNotificationsApi(unittest.TestCase):

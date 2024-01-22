@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.health_api import HealthApi
+from trieve_python_client.api.health_api import HealthApi
 
 
 class TestHealthApi(unittest.TestCase):

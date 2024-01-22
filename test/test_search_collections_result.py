@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.search_collections_result import SearchCollectionsResult
+from trieve_python_client.models.search_collections_result import SearchCollectionsResult
 
 class TestSearchCollectionsResult(unittest.TestCase):
     """SearchCollectionsResult unit test stubs"""
@@ -36,9 +36,9 @@ class TestSearchCollectionsResult(unittest.TestCase):
         if include_optional:
             return SearchCollectionsResult(
                 bookmarks = [
-                    arguflow.models.score_chunk_dto.ScoreChunkDTO(
+                    trieve_python_client.models.score_chunk_dto.ScoreChunkDTO(
                         metadata = [
-                            arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                            trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                                 author = null, 
                                 chunk_html = '', 
                                 content = '', 
@@ -56,7 +56,7 @@ class TestSearchCollectionsResult(unittest.TestCase):
                             ], 
                         score = 1.337, )
                     ],
-                collection = arguflow.models.chunk_collection.ChunkCollection(
+                collection = trieve_python_client.models.chunk_collection.ChunkCollection(
                     author_id = '', 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     dataset_id = '', 
@@ -69,9 +69,9 @@ class TestSearchCollectionsResult(unittest.TestCase):
         else:
             return SearchCollectionsResult(
                 bookmarks = [
-                    arguflow.models.score_chunk_dto.ScoreChunkDTO(
+                    trieve_python_client.models.score_chunk_dto.ScoreChunkDTO(
                         metadata = [
-                            arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                            trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                                 author = null, 
                                 chunk_html = '', 
                                 content = '', 
@@ -89,7 +89,7 @@ class TestSearchCollectionsResult(unittest.TestCase):
                             ], 
                         score = 1.337, )
                     ],
-                collection = arguflow.models.chunk_collection.ChunkCollection(
+                collection = trieve_python_client.models.chunk_collection.ChunkCollection(
                     author_id = '', 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     dataset_id = '', 

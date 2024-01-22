@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.score_chunk_dto import ScoreChunkDTO
+from trieve_python_client.models.score_chunk_dto import ScoreChunkDTO
 
 class TestScoreChunkDTO(unittest.TestCase):
     """ScoreChunkDTO unit test stubs"""
@@ -36,7 +36,7 @@ class TestScoreChunkDTO(unittest.TestCase):
         if include_optional:
             return ScoreChunkDTO(
                 metadata = [
-                    arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                    trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                         author = null, 
                         chunk_html = '', 
                         content = '', 
@@ -58,7 +58,7 @@ class TestScoreChunkDTO(unittest.TestCase):
         else:
             return ScoreChunkDTO(
                 metadata = [
-                    arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                    trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                         author = null, 
                         chunk_html = '', 
                         content = '', 

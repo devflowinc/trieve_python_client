@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.invitation_api import InvitationApi
+from trieve_python_client.api.invitation_api import InvitationApi
 
 
 class TestInvitationApi(unittest.TestCase):

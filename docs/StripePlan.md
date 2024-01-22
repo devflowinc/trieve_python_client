@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.stripe_plan import StripePlan
+from trieve_python_client.models.stripe_plan import StripePlan
 
 # TODO update the JSON string below
 json = "{}"

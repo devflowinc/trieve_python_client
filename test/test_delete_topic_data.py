@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.delete_topic_data import DeleteTopicData
+from trieve_python_client.models.delete_topic_data import DeleteTopicData
 
 class TestDeleteTopicData(unittest.TestCase):
     """DeleteTopicData unit test stubs"""

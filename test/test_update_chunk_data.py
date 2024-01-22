@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.update_chunk_data import UpdateChunkData
+from trieve_python_client.models.update_chunk_data import UpdateChunkData
 
 class TestUpdateChunkData(unittest.TestCase):
     """UpdateChunkData unit test stubs"""

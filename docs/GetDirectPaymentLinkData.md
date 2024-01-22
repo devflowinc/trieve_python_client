@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.get_direct_payment_link_data import GetDirectPaymentLinkData
+from trieve_python_client.models.get_direct_payment_link_data import GetDirectPaymentLinkData
 
 # TODO update the JSON string below
 json = "{}"

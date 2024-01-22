@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.get_user_with_chunks_data import GetUserWithChunksData
+from trieve_python_client.models.get_user_with_chunks_data import GetUserWithChunksData
 
 # TODO update the JSON string below
 json = "{}"

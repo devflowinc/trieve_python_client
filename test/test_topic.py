@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.topic import Topic
+from trieve_python_client.models.topic import Topic
 
 class TestTopic(unittest.TestCase):
     """Topic unit test stubs"""

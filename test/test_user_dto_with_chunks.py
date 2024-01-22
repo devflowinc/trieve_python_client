@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.user_dto_with_chunks import UserDTOWithChunks
+from trieve_python_client.models.user_dto_with_chunks import UserDTOWithChunks
 
 class TestUserDTOWithChunks(unittest.TestCase):
     """UserDTOWithChunks unit test stubs"""
@@ -36,7 +36,7 @@ class TestUserDTOWithChunks(unittest.TestCase):
         if include_optional:
             return UserDTOWithChunks(
                 chunks = [
-                    arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                    trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                         author = null, 
                         chunk_html = '', 
                         content = '', 
@@ -64,7 +64,7 @@ class TestUserDTOWithChunks(unittest.TestCase):
         else:
             return UserDTOWithChunks(
                 chunks = [
-                    arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                    trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                         author = null, 
                         chunk_html = '', 
                         content = '', 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.search_chunk_data_weights_inner import SearchChunkDataWeightsInner
+from trieve_python_client.models.search_chunk_data_weights_inner import SearchChunkDataWeightsInner
 
 class TestSearchChunkDataWeightsInner(unittest.TestCase):
     """SearchChunkDataWeightsInner unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.notification_id import NotificationId
+from trieve_python_client.models.notification_id import NotificationId
 
 class TestNotificationId(unittest.TestCase):
     """NotificationId unit test stubs"""

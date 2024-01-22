@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.delete_bookmark_path_data import DeleteBookmarkPathData
+from trieve_python_client.models.delete_bookmark_path_data import DeleteBookmarkPathData
 
 # TODO update the JSON string below
 json = "{}"

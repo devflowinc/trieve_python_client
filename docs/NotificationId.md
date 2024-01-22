@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.notification_id import NotificationId
+from trieve_python_client.models.notification_id import NotificationId
 
 # TODO update the JSON string below
 json = "{}"

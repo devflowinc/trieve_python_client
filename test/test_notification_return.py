@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.notification_return import NotificationReturn
+from trieve_python_client.models.notification_return import NotificationReturn
 
 class TestNotificationReturn(unittest.TestCase):
     """NotificationReturn unit test stubs"""

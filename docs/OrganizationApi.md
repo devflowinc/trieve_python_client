@@ -1,4 +1,4 @@
-# arguflow.OrganizationApi
+# trieve_python_client.OrganizationApi
 
 All URIs are relative to *http://localhost*
 
@@ -22,24 +22,24 @@ create_organization  Create a new organization. The auth'ed user who creates the
 
 
 ```python
-import arguflow
-from arguflow.models.create_organization_data import CreateOrganizationData
-from arguflow.models.organization import Organization
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.create_organization_data import CreateOrganizationData
+from trieve_python_client.models.organization import Organization
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.OrganizationApi(api_client)
-    create_organization_data = arguflow.CreateOrganizationData() # CreateOrganizationData | The organization data that you want to create
+    api_instance = trieve_python_client.OrganizationApi(api_client)
+    create_organization_data = trieve_python_client.CreateOrganizationData() # CreateOrganizationData | The organization data that you want to create
 
     try:
         # create_organization
@@ -92,22 +92,22 @@ get_organization  Fetch the details of an organization by its id. The auth'ed us
 
 
 ```python
-import arguflow
-from arguflow.models.organization import Organization
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.organization import Organization
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.OrganizationApi(api_client)
+    api_instance = trieve_python_client.OrganizationApi(api_client)
     organization_id = 'organization_id_example' # str | The id of the organization you want to fetch.
 
     try:
@@ -161,22 +161,22 @@ get_organization_usage  Fetch the current usage specification of an organization
 
 
 ```python
-import arguflow
-from arguflow.models.organization_usage_count import OrganizationUsageCount
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.organization_usage_count import OrganizationUsageCount
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.OrganizationApi(api_client)
+    api_instance = trieve_python_client.OrganizationApi(api_client)
     organization_id = 'organization_id_example' # str | The id of the organization you want to fetch the usage of.
 
     try:
@@ -230,22 +230,22 @@ get_organization_users  Fetch the users of an organization by its id. The auth'e
 
 
 ```python
-import arguflow
-from arguflow.models.slim_user import SlimUser
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.slim_user import SlimUser
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.OrganizationApi(api_client)
+    api_instance = trieve_python_client.OrganizationApi(api_client)
     organization_id = 'organization_id_example' # str | The id of the organization you want to fetch the users of.
 
     try:
@@ -299,24 +299,24 @@ update_organization  Update an organization. Only the owner of the organization 
 
 
 ```python
-import arguflow
-from arguflow.models.organization import Organization
-from arguflow.models.update_organization_data import UpdateOrganizationData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.organization import Organization
+from trieve_python_client.models.update_organization_data import UpdateOrganizationData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.OrganizationApi(api_client)
-    update_organization_data = arguflow.UpdateOrganizationData() # UpdateOrganizationData | The organization data that you want to update
+    api_instance = trieve_python_client.OrganizationApi(api_client)
+    update_organization_data = trieve_python_client.UpdateOrganizationData() # UpdateOrganizationData | The organization data that you want to update
 
     try:
         # update_organization

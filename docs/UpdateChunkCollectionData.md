@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.update_chunk_collection_data import UpdateChunkCollectionData
+from trieve_python_client.models.update_chunk_collection_data import UpdateChunkCollectionData
 
 # TODO update the JSON string below
 json = "{}"

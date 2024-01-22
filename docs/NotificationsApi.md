@@ -1,4 +1,4 @@
-# arguflow.NotificationsApi
+# trieve_python_client.NotificationsApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,22 +20,22 @@ get_notifications  Get notifications for the auth'ed user. Currently, this is on
 
 
 ```python
-import arguflow
-from arguflow.models.notification_return import NotificationReturn
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.notification_return import NotificationReturn
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.NotificationsApi(api_client)
+    api_instance = trieve_python_client.NotificationsApi(api_client)
     page = 56 # int | Page number of notifications to get
 
     try:
@@ -89,21 +89,21 @@ mark_all_read  Mark all notifications as read. Currently, this is only for notif
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.NotificationsApi(api_client)
+    api_instance = trieve_python_client.NotificationsApi(api_client)
 
     try:
         # mark_all_read
@@ -151,23 +151,23 @@ mark_read  Mark a notification specified by id as read. Currently, this is only 
 
 
 ```python
-import arguflow
-from arguflow.models.notification_id import NotificationId
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.notification_id import NotificationId
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.NotificationsApi(api_client)
-    notification_id = arguflow.NotificationId() # NotificationId | JSON request payload with id of notification to mark read
+    api_instance = trieve_python_client.NotificationsApi(api_client)
+    notification_id = trieve_python_client.NotificationId() # NotificationId | JSON request payload with id of notification to mark read
 
     try:
         # mark_read

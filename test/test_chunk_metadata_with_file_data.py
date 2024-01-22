@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.chunk_metadata_with_file_data import ChunkMetadataWithFileData
+from trieve_python_client.models.chunk_metadata_with_file_data import ChunkMetadataWithFileData
 
 class TestChunkMetadataWithFileData(unittest.TestCase):
     """ChunkMetadataWithFileData unit test stubs"""
@@ -35,7 +35,7 @@ class TestChunkMetadataWithFileData(unittest.TestCase):
         model = ChunkMetadataWithFileData()
         if include_optional:
             return ChunkMetadataWithFileData(
-                author = arguflow.models.user_dto.UserDTO(
+                author = trieve_python_client.models.user_dto.UserDTO(
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     email = '', 
                     id = '', 

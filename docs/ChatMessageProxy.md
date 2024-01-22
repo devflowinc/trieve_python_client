@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.chat_message_proxy import ChatMessageProxy
+from trieve_python_client.models.chat_message_proxy import ChatMessageProxy
 
 # TODO update the JSON string below
 json = "{}"

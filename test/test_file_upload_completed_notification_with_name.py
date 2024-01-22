@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.file_upload_completed_notification_with_name import FileUploadCompletedNotificationWithName
+from trieve_python_client.models.file_upload_completed_notification_with_name import FileUploadCompletedNotificationWithName
 
 class TestFileUploadCompletedNotificationWithName(unittest.TestCase):
     """FileUploadCompletedNotificationWithName unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.get_user_with_chunks_data import GetUserWithChunksData
+from trieve_python_client.models.get_user_with_chunks_data import GetUserWithChunksData
 
 class TestGetUserWithChunksData(unittest.TestCase):
     """GetUserWithChunksData unit test stubs"""

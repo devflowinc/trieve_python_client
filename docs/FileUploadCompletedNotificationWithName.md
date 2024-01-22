@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.file_upload_completed_notification_with_name import FileUploadCompletedNotificationWithName
+from trieve_python_client.models.file_upload_completed_notification_with_name import FileUploadCompletedNotificationWithName
 
 # TODO update the JSON string below
 json = "{}"

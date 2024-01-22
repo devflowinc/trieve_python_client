@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.stripe_plan import StripePlan
+from trieve_python_client.models.stripe_plan import StripePlan
 
 class TestStripePlan(unittest.TestCase):
     """StripePlan unit test stubs"""

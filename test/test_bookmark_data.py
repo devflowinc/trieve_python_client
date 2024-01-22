@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.bookmark_data import BookmarkData
+from trieve_python_client.models.bookmark_data import BookmarkData
 
 class TestBookmarkData(unittest.TestCase):
     """BookmarkData unit test stubs"""
@@ -36,9 +36,9 @@ class TestBookmarkData(unittest.TestCase):
         if include_optional:
             return BookmarkData(
                 bookmarks = [
-                    arguflow.models.bookmark_chunks.BookmarkChunks(
+                    trieve_python_client.models.bookmark_chunks.BookmarkChunks(
                         metadata = [
-                            arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                            trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                                 author = null, 
                                 chunk_html = '', 
                                 content = '', 
@@ -55,7 +55,7 @@ class TestBookmarkData(unittest.TestCase):
                                 weight = 1.337, )
                             ], )
                     ],
-                collection = arguflow.models.chunk_collection.ChunkCollection(
+                collection = trieve_python_client.models.chunk_collection.ChunkCollection(
                     author_id = '', 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     dataset_id = '', 
@@ -68,9 +68,9 @@ class TestBookmarkData(unittest.TestCase):
         else:
             return BookmarkData(
                 bookmarks = [
-                    arguflow.models.bookmark_chunks.BookmarkChunks(
+                    trieve_python_client.models.bookmark_chunks.BookmarkChunks(
                         metadata = [
-                            arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                            trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                                 author = null, 
                                 chunk_html = '', 
                                 content = '', 
@@ -87,7 +87,7 @@ class TestBookmarkData(unittest.TestCase):
                                 weight = 1.337, )
                             ], )
                     ],
-                collection = arguflow.models.chunk_collection.ChunkCollection(
+                collection = trieve_python_client.models.chunk_collection.ChunkCollection(
                     author_id = '', 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     dataset_id = '', 

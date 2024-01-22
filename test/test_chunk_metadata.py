@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.chunk_metadata import ChunkMetadata
+from trieve_python_client.models.chunk_metadata import ChunkMetadata
 
 class TestChunkMetadata(unittest.TestCase):
     """ChunkMetadata unit test stubs"""

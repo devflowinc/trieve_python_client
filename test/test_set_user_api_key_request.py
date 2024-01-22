@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.set_user_api_key_request import SetUserApiKeyRequest
+from trieve_python_client.models.set_user_api_key_request import SetUserApiKeyRequest
 
 class TestSetUserApiKeyRequest(unittest.TestCase):
     """SetUserApiKeyRequest unit test stubs"""

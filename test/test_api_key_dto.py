@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.api_key_dto import ApiKeyDTO
+from trieve_python_client.models.api_key_dto import ApiKeyDTO
 
 class TestApiKeyDTO(unittest.TestCase):
     """ApiKeyDTO unit test stubs"""

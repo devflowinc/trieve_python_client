@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.slim_user import SlimUser
+from trieve_python_client.models.slim_user import SlimUser
 
 class TestSlimUser(unittest.TestCase):
     """SlimUser unit test stubs"""
@@ -39,7 +39,7 @@ class TestSlimUser(unittest.TestCase):
                 id = '',
                 name = '',
                 orgs = [
-                    arguflow.models.organization.Organization(
+                    trieve_python_client.models.organization.Organization(
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         id = '', 
                         name = '', 
@@ -47,7 +47,7 @@ class TestSlimUser(unittest.TestCase):
                         updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                     ],
                 user_orgs = [
-                    arguflow.models.user_organization.UserOrganization(
+                    trieve_python_client.models.user_organization.UserOrganization(
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         id = '', 
                         organization_id = '', 
@@ -64,7 +64,7 @@ class TestSlimUser(unittest.TestCase):
                 email = '',
                 id = '',
                 orgs = [
-                    arguflow.models.organization.Organization(
+                    trieve_python_client.models.organization.Organization(
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         id = '', 
                         name = '', 
@@ -72,7 +72,7 @@ class TestSlimUser(unittest.TestCase):
                         updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                     ],
                 user_orgs = [
-                    arguflow.models.user_organization.UserOrganization(
+                    trieve_python_client.models.user_organization.UserOrganization(
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         id = '', 
                         organization_id = '', 

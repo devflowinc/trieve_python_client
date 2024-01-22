@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.score_chunk_dto import ScoreChunkDTO
+from trieve_python_client.models.score_chunk_dto import ScoreChunkDTO
 
 # TODO update the JSON string below
 json = "{}"

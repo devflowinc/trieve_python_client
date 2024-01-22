@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.organization_usage_count import OrganizationUsageCount
+from trieve_python_client.models.organization_usage_count import OrganizationUsageCount
 
 class TestOrganizationUsageCount(unittest.TestCase):
     """OrganizationUsageCount unit test stubs"""

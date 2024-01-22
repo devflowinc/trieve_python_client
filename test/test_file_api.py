@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.file_api import FileApi
+from trieve_python_client.api.file_api import FileApi
 
 
 class TestFileApi(unittest.TestCase):

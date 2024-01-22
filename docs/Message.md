@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.message import Message
+from trieve_python_client.models.message import Message
 
 # TODO update the JSON string below
 json = "{}"

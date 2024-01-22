@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.search_collections_data import SearchCollectionsData
+from trieve_python_client.models.search_collections_data import SearchCollectionsData
 
 class TestSearchCollectionsData(unittest.TestCase):
     """SearchCollectionsData unit test stubs"""

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.delete_dataset_request import DeleteDatasetRequest
+from trieve_python_client.models.delete_dataset_request import DeleteDatasetRequest
 
 # TODO update the JSON string below
 json = "{}"

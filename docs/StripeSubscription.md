@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.stripe_subscription import StripeSubscription
+from trieve_python_client.models.stripe_subscription import StripeSubscription
 
 # TODO update the JSON string below
 json = "{}"

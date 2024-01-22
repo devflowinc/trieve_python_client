@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.search_chunk_data_weights_inner import SearchChunkDataWeightsInner
+from trieve_python_client.models.search_chunk_data_weights_inner import SearchChunkDataWeightsInner
 
 # TODO update the JSON string below
 json = "{}"

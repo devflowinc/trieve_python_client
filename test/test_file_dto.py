@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.file_dto import FileDTO
+from trieve_python_client.models.file_dto import FileDTO
 
 class TestFileDTO(unittest.TestCase):
     """FileDTO unit test stubs"""

@@ -20,7 +20,7 @@ from setuptools import setup, find_packages  # noqa: H301
 #
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
-NAME = "arguflow"
+NAME = "trieve-python-client"
 VERSION = "1.0.0"
 PYTHON_REQUIRES = ">=3.7"
 REQUIRES = [
@@ -46,5 +46,5 @@ setup(
     long_description="""\
     Trieve REST API OpenAPI Documentation
     """,  # noqa: E501
-    package_data={"arguflow": ["py.typed"]},
+    package_data={"trieve_python_client": ["py.typed"]},
 )

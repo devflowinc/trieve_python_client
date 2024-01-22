@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.update_user_data import UpdateUserData
+from trieve_python_client.models.update_user_data import UpdateUserData
 
 class TestUpdateUserData(unittest.TestCase):
     """UpdateUserData unit test stubs"""

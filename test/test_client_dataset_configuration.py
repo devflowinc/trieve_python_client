@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.client_dataset_configuration import ClientDatasetConfiguration
+from trieve_python_client.models.client_dataset_configuration import ClientDatasetConfiguration
 
 class TestClientDatasetConfiguration(unittest.TestCase):
     """ClientDatasetConfiguration unit test stubs"""

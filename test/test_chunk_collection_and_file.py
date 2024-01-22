@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.chunk_collection_and_file import ChunkCollectionAndFile
+from trieve_python_client.models.chunk_collection_and_file import ChunkCollectionAndFile
 
 class TestChunkCollectionAndFile(unittest.TestCase):
     """ChunkCollectionAndFile unit test stubs"""

@@ -1,4 +1,4 @@
-# arguflow.DatasetApi
+# trieve_python_client.DatasetApi
 
 All URIs are relative to *http://localhost*
 
@@ -23,24 +23,24 @@ create_dataset  Create a new dataset. The auth'ed user must be an owner of the o
 
 
 ```python
-import arguflow
-from arguflow.models.create_dataset_request import CreateDatasetRequest
-from arguflow.models.dataset import Dataset
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.create_dataset_request import CreateDatasetRequest
+from trieve_python_client.models.dataset import Dataset
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.DatasetApi(api_client)
-    create_dataset_request = arguflow.CreateDatasetRequest() # CreateDatasetRequest | JSON request payload to create a new dataset
+    api_instance = trieve_python_client.DatasetApi(api_client)
+    create_dataset_request = trieve_python_client.CreateDatasetRequest() # CreateDatasetRequest | JSON request payload to create a new dataset
 
     try:
         # create_dataset
@@ -93,23 +93,23 @@ delete_dataset  Delete a dataset. The auth'ed user must be an owner of the organ
 
 
 ```python
-import arguflow
-from arguflow.models.delete_dataset_request import DeleteDatasetRequest
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.delete_dataset_request import DeleteDatasetRequest
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.DatasetApi(api_client)
-    delete_dataset_request = arguflow.DeleteDatasetRequest() # DeleteDatasetRequest | JSON request payload to delete a dataset
+    api_instance = trieve_python_client.DatasetApi(api_client)
+    delete_dataset_request = trieve_python_client.DeleteDatasetRequest() # DeleteDatasetRequest | JSON request payload to delete a dataset
 
     try:
         # delete_dataset
@@ -160,22 +160,22 @@ get_client_dataset_config  Get the client configuration for a dataset. Will use 
 
 
 ```python
-import arguflow
-from arguflow.models.client_dataset_configuration import ClientDatasetConfiguration
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.client_dataset_configuration import ClientDatasetConfiguration
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.DatasetApi(api_client)
+    api_instance = trieve_python_client.DatasetApi(api_client)
 
     try:
         # get_client_dataset_config
@@ -225,22 +225,22 @@ get_dataset  Get a dataset by id. The auth'ed user must be an admin or owner of 
 
 
 ```python
-import arguflow
-from arguflow.models.dataset import Dataset
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.dataset import Dataset
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.DatasetApi(api_client)
+    api_instance = trieve_python_client.DatasetApi(api_client)
     dataset_id = 'dataset_id_example' # str | The id of the dataset you want to retrieve.
 
     try:
@@ -294,22 +294,22 @@ get_organization_datasets  Get all datasets for an organization. The auth'ed use
 
 
 ```python
-import arguflow
-from arguflow.models.dataset_and_usage import DatasetAndUsage
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.dataset_and_usage import DatasetAndUsage
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.DatasetApi(api_client)
+    api_instance = trieve_python_client.DatasetApi(api_client)
     organization_id = 'organization_id_example' # str | id of the organization you want to retrieve datasets for
 
     try:
@@ -363,24 +363,24 @@ update_dataset  Update a dataset. The auth'ed user must be an owner of the organ
 
 
 ```python
-import arguflow
-from arguflow.models.dataset import Dataset
-from arguflow.models.update_dataset_request import UpdateDatasetRequest
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.dataset import Dataset
+from trieve_python_client.models.update_dataset_request import UpdateDatasetRequest
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.DatasetApi(api_client)
-    update_dataset_request = arguflow.UpdateDatasetRequest() # UpdateDatasetRequest | JSON request payload to update a dataset
+    api_instance = trieve_python_client.DatasetApi(api_client)
+    update_dataset_request = trieve_python_client.UpdateDatasetRequest() # UpdateDatasetRequest | JSON request payload to update a dataset
 
     try:
         # update_dataset

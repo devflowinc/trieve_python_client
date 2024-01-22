@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.generate_chunks_request import GenerateChunksRequest
+from trieve_python_client.models.generate_chunks_request import GenerateChunksRequest
 
 # TODO update the JSON string below
 json = "{}"

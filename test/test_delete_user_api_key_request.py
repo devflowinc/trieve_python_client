@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.delete_user_api_key_request import DeleteUserApiKeyRequest
+from trieve_python_client.models.delete_user_api_key_request import DeleteUserApiKeyRequest
 
 class TestDeleteUserApiKeyRequest(unittest.TestCase):
     """DeleteUserApiKeyRequest unit test stubs"""

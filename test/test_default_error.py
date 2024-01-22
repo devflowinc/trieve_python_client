@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.default_error import DefaultError
+from trieve_python_client.models.default_error import DefaultError
 
 class TestDefaultError(unittest.TestCase):
     """DefaultError unit test stubs"""

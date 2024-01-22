@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.delete_topic_data import DeleteTopicData
+from trieve_python_client.models.delete_topic_data import DeleteTopicData
 
 # TODO update the JSON string below
 json = "{}"

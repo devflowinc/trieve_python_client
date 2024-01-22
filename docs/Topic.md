@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.topic import Topic
+from trieve_python_client.models.topic import Topic
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# arguflow.UserApi
+# trieve_python_client.UserApi
 
 All URIs are relative to *http://localhost*
 
@@ -22,24 +22,24 @@ delete_user_api_key  Delete an api key for the auth'ed user.
 
 
 ```python
-import arguflow
-from arguflow.models.api_key_dto import ApiKeyDTO
-from arguflow.models.delete_user_api_key_request import DeleteUserApiKeyRequest
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.api_key_dto import ApiKeyDTO
+from trieve_python_client.models.delete_user_api_key_request import DeleteUserApiKeyRequest
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.UserApi(api_client)
-    delete_user_api_key_request = arguflow.DeleteUserApiKeyRequest() # DeleteUserApiKeyRequest | JSON request payload to delete a user api key
+    api_instance = trieve_python_client.UserApi(api_client)
+    delete_user_api_key_request = trieve_python_client.DeleteUserApiKeyRequest() # DeleteUserApiKeyRequest | JSON request payload to delete a user api key
 
     try:
         # delete_user_api_key
@@ -92,22 +92,22 @@ get_user_files  Get all files which belong to a given user specified by the user
 
 
 ```python
-import arguflow
-from arguflow.models.file import File
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.file import File
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.UserApi(api_client)
+    api_instance = trieve_python_client.UserApi(api_client)
     user_id = 'user_id_example' # str | The id of the user to fetch files for.
 
     try:
@@ -161,22 +161,22 @@ get_user_chunks  Get the chunks which were made by a given user.
 
 
 ```python
-import arguflow
-from arguflow.models.user_dto_with_chunks import UserDTOWithChunks
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.user_dto_with_chunks import UserDTOWithChunks
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.UserApi(api_client)
+    api_instance = trieve_python_client.UserApi(api_client)
     user_id = 'user_id_example' # str | The id of the user to fetch.
     page = 56 # int | The page of chunks to fetch. Each page is 10 chunks. Support for custom page size is coming soon.
 
@@ -232,24 +232,24 @@ set_user_api_key  Create a new api key for the auth'ed user. Successful response
 
 
 ```python
-import arguflow
-from arguflow.models.set_user_api_key_request import SetUserApiKeyRequest
-from arguflow.models.set_user_api_key_response import SetUserApiKeyResponse
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.set_user_api_key_request import SetUserApiKeyRequest
+from trieve_python_client.models.set_user_api_key_response import SetUserApiKeyResponse
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.UserApi(api_client)
-    set_user_api_key_request = arguflow.SetUserApiKeyRequest() # SetUserApiKeyRequest | 
+    api_instance = trieve_python_client.UserApi(api_client)
+    set_user_api_key_request = trieve_python_client.SetUserApiKeyRequest() # SetUserApiKeyRequest | 
 
     try:
         # set_user_api_key
@@ -302,24 +302,24 @@ update_user  Update a user's information. If the user_id is not provided, the au
 
 
 ```python
-import arguflow
-from arguflow.models.slim_user import SlimUser
-from arguflow.models.update_user_data import UpdateUserData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.slim_user import SlimUser
+from trieve_python_client.models.update_user_data import UpdateUserData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.UserApi(api_client)
-    update_user_data = arguflow.UpdateUserData() # UpdateUserData | JSON request payload to update user information for the auth'ed user
+    api_instance = trieve_python_client.UserApi(api_client)
+    update_user_data = trieve_python_client.UpdateUserData() # UpdateUserData | JSON request payload to update user information for the auth'ed user
 
     try:
         # update_user

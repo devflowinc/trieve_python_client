@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.generate_off_collection_data import GenerateOffCollectionData
+from trieve_python_client.models.generate_off_collection_data import GenerateOffCollectionData
 
 class TestGenerateOffCollectionData(unittest.TestCase):
     """GenerateOffCollectionData unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.organization import Organization
+from trieve_python_client.models.organization import Organization
 
 class TestOrganization(unittest.TestCase):
     """Organization unit test stubs"""

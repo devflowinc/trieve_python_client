@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.delete_bookmark_path_data import DeleteBookmarkPathData
+from trieve_python_client.models.delete_bookmark_path_data import DeleteBookmarkPathData
 
 class TestDeleteBookmarkPathData(unittest.TestCase):
     """DeleteBookmarkPathData unit test stubs"""

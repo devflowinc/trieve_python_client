@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.slim_collection import SlimCollection
+from trieve_python_client.models.slim_collection import SlimCollection
 
 class TestSlimCollection(unittest.TestCase):
     """SlimCollection unit test stubs"""

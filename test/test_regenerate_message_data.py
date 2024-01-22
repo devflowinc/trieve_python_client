@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.regenerate_message_data import RegenerateMessageData
+from trieve_python_client.models.regenerate_message_data import RegenerateMessageData
 
 class TestRegenerateMessageData(unittest.TestCase):
     """RegenerateMessageData unit test stubs"""

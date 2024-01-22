@@ -1,4 +1,4 @@
-# arguflow.AuthApi
+# trieve_python_client.AuthApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,22 +21,22 @@ openid_callback  This is the callback route for the OAuth provider, it should no
 
 
 ```python
-import arguflow
-from arguflow.models.slim_user import SlimUser
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.slim_user import SlimUser
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.AuthApi(api_client)
+    api_instance = trieve_python_client.AuthApi(api_client)
 
     try:
         # openid_callback
@@ -86,22 +86,22 @@ get_me  Get the user corresponding to your current auth credentials.
 
 
 ```python
-import arguflow
-from arguflow.models.slim_user import SlimUser
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.slim_user import SlimUser
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.AuthApi(api_client)
+    api_instance = trieve_python_client.AuthApi(api_client)
 
     try:
         # get_me
@@ -151,21 +151,21 @@ login  This will redirect you to the OAuth provider for authentication with emai
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.AuthApi(api_client)
+    api_instance = trieve_python_client.AuthApi(api_client)
     inv_code = 'inv_code_example' # str | Code sent via email as a result of successful call to send_invitation (optional)
     organization_id = 'organization_id_example' # str | ID of organization to authenticate into (optional)
     redirect_uri = 'redirect_uri_example' # str | URL to redirect to after successful login (optional)
@@ -221,21 +221,21 @@ logout  Invalidate your current auth credential stored typicall stored in a cook
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.AuthApi(api_client)
+    api_instance = trieve_python_client.AuthApi(api_client)
 
     try:
         # logout

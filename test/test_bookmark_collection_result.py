@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.bookmark_collection_result import BookmarkCollectionResult
+from trieve_python_client.models.bookmark_collection_result import BookmarkCollectionResult
 
 class TestBookmarkCollectionResult(unittest.TestCase):
     """BookmarkCollectionResult unit test stubs"""
@@ -37,7 +37,7 @@ class TestBookmarkCollectionResult(unittest.TestCase):
             return BookmarkCollectionResult(
                 chunk_uuid = '',
                 slim_collections = [
-                    arguflow.models.slim_collection.SlimCollection(
+                    trieve_python_client.models.slim_collection.SlimCollection(
                         author_id = '', 
                         id = '', 
                         name = '', 
@@ -48,7 +48,7 @@ class TestBookmarkCollectionResult(unittest.TestCase):
             return BookmarkCollectionResult(
                 chunk_uuid = '',
                 slim_collections = [
-                    arguflow.models.slim_collection.SlimCollection(
+                    trieve_python_client.models.slim_collection.SlimCollection(
                         author_id = '', 
                         id = '', 
                         name = '', 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.stripe_subscription import StripeSubscription
+from trieve_python_client.models.stripe_subscription import StripeSubscription
 
 class TestStripeSubscription(unittest.TestCase):
     """StripeSubscription unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.search_chunk_data import SearchChunkData
+from trieve_python_client.models.search_chunk_data import SearchChunkData
 
 class TestSearchChunkData(unittest.TestCase):
     """SearchChunkData unit test stubs"""

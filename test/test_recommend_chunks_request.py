@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.recommend_chunks_request import RecommendChunksRequest
+from trieve_python_client.models.recommend_chunks_request import RecommendChunksRequest
 
 class TestRecommendChunksRequest(unittest.TestCase):
     """RecommendChunksRequest unit test stubs"""

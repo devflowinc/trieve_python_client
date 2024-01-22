@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.message_api import MessageApi
+from trieve_python_client.api.message_api import MessageApi
 
 
 class TestMessageApi(unittest.TestCase):

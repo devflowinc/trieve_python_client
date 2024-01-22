@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.update_chunk_by_tracking_id_data import UpdateChunkByTrackingIdData
+from trieve_python_client.models.update_chunk_by_tracking_id_data import UpdateChunkByTrackingIdData
 
 class TestUpdateChunkByTrackingIdData(unittest.TestCase):
     """UpdateChunkByTrackingIdData unit test stubs"""

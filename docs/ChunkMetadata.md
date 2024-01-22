@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.chunk_metadata import ChunkMetadata
+from trieve_python_client.models.chunk_metadata import ChunkMetadata
 
 # TODO update the JSON string below
 json = "{}"

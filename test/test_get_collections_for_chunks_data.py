@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.get_collections_for_chunks_data import GetCollectionsForChunksData
+from trieve_python_client.models.get_collections_for_chunks_data import GetCollectionsForChunksData
 
 class TestGetCollectionsForChunksData(unittest.TestCase):
     """GetCollectionsForChunksData unit test stubs"""

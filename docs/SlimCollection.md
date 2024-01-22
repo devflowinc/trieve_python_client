@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.slim_collection import SlimCollection
+from trieve_python_client.models.slim_collection import SlimCollection
 
 # TODO update the JSON string below
 json = "{}"

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.notification_return import NotificationReturn
+from trieve_python_client.models.notification_return import NotificationReturn
 
 # TODO update the JSON string below
 json = "{}"

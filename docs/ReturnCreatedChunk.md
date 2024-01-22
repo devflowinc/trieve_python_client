@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.return_created_chunk import ReturnCreatedChunk
+from trieve_python_client.models.return_created_chunk import ReturnCreatedChunk
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.organization_api import OrganizationApi
+from trieve_python_client.api.organization_api import OrganizationApi
 
 
 class TestOrganizationApi(unittest.TestCase):

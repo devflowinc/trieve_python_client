@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.get_direct_payment_link_data import GetDirectPaymentLinkData
+from trieve_python_client.models.get_direct_payment_link_data import GetDirectPaymentLinkData
 
 class TestGetDirectPaymentLinkData(unittest.TestCase):
     """GetDirectPaymentLinkData unit test stubs"""

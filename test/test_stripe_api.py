@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.stripe_api import StripeApi
+from trieve_python_client.api.stripe_api import StripeApi
 
 
 class TestStripeApi(unittest.TestCase):

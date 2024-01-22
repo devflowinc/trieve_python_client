@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.search_chunk_query_response_body import SearchChunkQueryResponseBody
+from trieve_python_client.models.search_chunk_query_response_body import SearchChunkQueryResponseBody
 
 class TestSearchChunkQueryResponseBody(unittest.TestCase):
     """SearchChunkQueryResponseBody unit test stubs"""
@@ -36,9 +36,9 @@ class TestSearchChunkQueryResponseBody(unittest.TestCase):
         if include_optional:
             return SearchChunkQueryResponseBody(
                 score_chunks = [
-                    arguflow.models.score_chunk_dto.ScoreChunkDTO(
+                    trieve_python_client.models.score_chunk_dto.ScoreChunkDTO(
                         metadata = [
-                            arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                            trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                                 author = null, 
                                 chunk_html = '', 
                                 content = '', 
@@ -61,9 +61,9 @@ class TestSearchChunkQueryResponseBody(unittest.TestCase):
         else:
             return SearchChunkQueryResponseBody(
                 score_chunks = [
-                    arguflow.models.score_chunk_dto.ScoreChunkDTO(
+                    trieve_python_client.models.score_chunk_dto.ScoreChunkDTO(
                         metadata = [
-                            arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                            trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                                 author = null, 
                                 chunk_html = '', 
                                 content = '', 

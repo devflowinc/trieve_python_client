@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.delete_dataset_request import DeleteDatasetRequest
+from trieve_python_client.models.delete_dataset_request import DeleteDatasetRequest
 
 class TestDeleteDatasetRequest(unittest.TestCase):
     """DeleteDatasetRequest unit test stubs"""

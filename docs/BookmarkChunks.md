@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.bookmark_chunks import BookmarkChunks
+from trieve_python_client.models.bookmark_chunks import BookmarkChunks
 
 # TODO update the JSON string below
 json = "{}"

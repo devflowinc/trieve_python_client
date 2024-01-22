@@ -1,4 +1,4 @@
-# arguflow.TopicApi
+# trieve_python_client.TopicApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,24 +21,24 @@ create_topic  Create a new chat topic. Topics are attached to a user and act as 
 
 
 ```python
-import arguflow
-from arguflow.models.create_topic_data import CreateTopicData
-from arguflow.models.topic import Topic
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.create_topic_data import CreateTopicData
+from trieve_python_client.models.topic import Topic
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.TopicApi(api_client)
-    create_topic_data = arguflow.CreateTopicData() # CreateTopicData | JSON request payload to create chat topic
+    api_instance = trieve_python_client.TopicApi(api_client)
+    create_topic_data = trieve_python_client.CreateTopicData() # CreateTopicData | JSON request payload to create chat topic
 
     try:
         # create_topic
@@ -91,23 +91,23 @@ delete_topic  Delete an existing chat topic. When a topic is deleted, all associ
 
 
 ```python
-import arguflow
-from arguflow.models.delete_topic_data import DeleteTopicData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.delete_topic_data import DeleteTopicData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.TopicApi(api_client)
-    delete_topic_data = arguflow.DeleteTopicData() # DeleteTopicData | JSON request payload to delete a chat topic
+    api_instance = trieve_python_client.TopicApi(api_client)
+    delete_topic_data = trieve_python_client.DeleteTopicData() # DeleteTopicData | JSON request payload to delete a chat topic
 
     try:
         # delete_topic
@@ -158,22 +158,22 @@ get_all_topics  Get all topics belonging to a the auth'ed user. Soon, we plan to
 
 
 ```python
-import arguflow
-from arguflow.models.topic import Topic
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.topic import Topic
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.TopicApi(api_client)
+    api_instance = trieve_python_client.TopicApi(api_client)
 
     try:
         # get_all_topics
@@ -223,23 +223,23 @@ update_topic  Update an existing chat topic. Currently, only the name of the top
 
 
 ```python
-import arguflow
-from arguflow.models.update_topic_data import UpdateTopicData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.update_topic_data import UpdateTopicData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.TopicApi(api_client)
-    update_topic_data = arguflow.UpdateTopicData() # UpdateTopicData | JSON request payload to update a chat topic
+    api_instance = trieve_python_client.TopicApi(api_client)
+    update_topic_data = trieve_python_client.UpdateTopicData() # UpdateTopicData | JSON request payload to update a chat topic
 
     try:
         # update_topic

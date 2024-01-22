@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.edit_message_data import EditMessageData
+from trieve_python_client.models.edit_message_data import EditMessageData
 
 class TestEditMessageData(unittest.TestCase):
     """EditMessageData unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.auth_data import AuthData
+from trieve_python_client.models.auth_data import AuthData
 
 class TestAuthData(unittest.TestCase):
     """AuthData unit test stubs"""

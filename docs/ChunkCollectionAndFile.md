@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.chunk_collection_and_file import ChunkCollectionAndFile
+from trieve_python_client.models.chunk_collection_and_file import ChunkCollectionAndFile
 
 # TODO update the JSON string below
 json = "{}"

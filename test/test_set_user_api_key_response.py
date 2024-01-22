@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.set_user_api_key_response import SetUserApiKeyResponse
+from trieve_python_client.models.set_user_api_key_response import SetUserApiKeyResponse
 
 class TestSetUserApiKeyResponse(unittest.TestCase):
     """SetUserApiKeyResponse unit test stubs"""

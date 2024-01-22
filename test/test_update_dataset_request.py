@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.update_dataset_request import UpdateDatasetRequest
+from trieve_python_client.models.update_dataset_request import UpdateDatasetRequest
 
 class TestUpdateDatasetRequest(unittest.TestCase):
     """UpdateDatasetRequest unit test stubs"""

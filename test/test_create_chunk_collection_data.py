@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.create_chunk_collection_data import CreateChunkCollectionData
+from trieve_python_client.models.create_chunk_collection_data import CreateChunkCollectionData
 
 class TestCreateChunkCollectionData(unittest.TestCase):
     """CreateChunkCollectionData unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.dataset import Dataset
+from trieve_python_client.models.dataset import Dataset
 
 class TestDataset(unittest.TestCase):
     """Dataset unit test stubs"""

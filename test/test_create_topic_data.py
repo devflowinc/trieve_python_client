@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.create_topic_data import CreateTopicData
+from trieve_python_client.models.create_topic_data import CreateTopicData
 
 class TestCreateTopicData(unittest.TestCase):
     """CreateTopicData unit test stubs"""

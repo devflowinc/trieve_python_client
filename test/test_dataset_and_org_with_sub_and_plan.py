@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.dataset_and_org_with_sub_and_plan import DatasetAndOrgWithSubAndPlan
+from trieve_python_client.models.dataset_and_org_with_sub_and_plan import DatasetAndOrgWithSubAndPlan
 
 class TestDatasetAndOrgWithSubAndPlan(unittest.TestCase):
     """DatasetAndOrgWithSubAndPlan unit test stubs"""
@@ -35,7 +35,7 @@ class TestDatasetAndOrgWithSubAndPlan(unittest.TestCase):
         model = DatasetAndOrgWithSubAndPlan()
         if include_optional:
             return DatasetAndOrgWithSubAndPlan(
-                dataset = arguflow.models.dataset.Dataset(
+                dataset = trieve_python_client.models.dataset.Dataset(
                     client_configuration = null, 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     id = '', 
@@ -43,7 +43,7 @@ class TestDatasetAndOrgWithSubAndPlan(unittest.TestCase):
                     organization_id = '', 
                     server_configuration = null, 
                     updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                organization = arguflow.models.organization_with_sub_and_plan.OrganizationWithSubAndPlan(
+                organization = trieve_python_client.models.organization_with_sub_and_plan.OrganizationWithSubAndPlan(
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     id = '', 
                     name = '', 
@@ -54,7 +54,7 @@ class TestDatasetAndOrgWithSubAndPlan(unittest.TestCase):
             )
         else:
             return DatasetAndOrgWithSubAndPlan(
-                dataset = arguflow.models.dataset.Dataset(
+                dataset = trieve_python_client.models.dataset.Dataset(
                     client_configuration = null, 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     id = '', 
@@ -62,7 +62,7 @@ class TestDatasetAndOrgWithSubAndPlan(unittest.TestCase):
                     organization_id = '', 
                     server_configuration = null, 
                     updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                organization = arguflow.models.organization_with_sub_and_plan.OrganizationWithSubAndPlan(
+                organization = trieve_python_client.models.organization_with_sub_and_plan.OrganizationWithSubAndPlan(
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     id = '', 
                     name = '', 

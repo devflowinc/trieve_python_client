@@ -1,4 +1,4 @@
-# arguflow.MessageApi
+# trieve_python_client.MessageApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,23 +21,23 @@ create_message  Create a message. Messages are attached to topics in order to co
 
 
 ```python
-import arguflow
-from arguflow.models.create_message_data import CreateMessageData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.create_message_data import CreateMessageData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.MessageApi(api_client)
-    create_message_data = arguflow.CreateMessageData() # CreateMessageData | JSON request payload to create a message completion
+    api_instance = trieve_python_client.MessageApi(api_client)
+    create_message_data = trieve_python_client.CreateMessageData() # CreateMessageData | JSON request payload to create a message completion
 
     try:
         # create_message
@@ -88,23 +88,23 @@ edit_message  Edit a message which exists within the topic's chat history. This 
 
 
 ```python
-import arguflow
-from arguflow.models.edit_message_data import EditMessageData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.edit_message_data import EditMessageData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.MessageApi(api_client)
-    edit_message_data = arguflow.EditMessageData() # EditMessageData | JSON request payload to edit a message and get a new stream
+    api_instance = trieve_python_client.MessageApi(api_client)
+    edit_message_data = trieve_python_client.EditMessageData() # EditMessageData | JSON request payload to edit a message and get a new stream
 
     try:
         # edit_message
@@ -155,22 +155,22 @@ get_all_messages  Get all messages for a given topic. If the topic is a RAG topi
 
 
 ```python
-import arguflow
-from arguflow.models.message import Message
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.message import Message
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.MessageApi(api_client)
+    api_instance = trieve_python_client.MessageApi(api_client)
     messages_topic_id = 'messages_topic_id_example' # str | The ID of the topic to get messages for.
 
     try:
@@ -224,23 +224,23 @@ regenerate_message  Regenerate the assistant response to the last user message o
 
 
 ```python
-import arguflow
-from arguflow.models.regenerate_message_data import RegenerateMessageData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.regenerate_message_data import RegenerateMessageData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.MessageApi(api_client)
-    regenerate_message_data = arguflow.RegenerateMessageData() # RegenerateMessageData | JSON request payload to delete an agent message then regenerate it in a strem
+    api_instance = trieve_python_client.MessageApi(api_client)
+    regenerate_message_data = trieve_python_client.RegenerateMessageData() # RegenerateMessageData | JSON request payload to delete an agent message then regenerate it in a strem
 
     try:
         # regenerate_message

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.create_message_data import CreateMessageData
+from trieve_python_client.models.create_message_data import CreateMessageData
 
 class TestCreateMessageData(unittest.TestCase):
     """CreateMessageData unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.collection_data import CollectionData
+from trieve_python_client.models.collection_data import CollectionData
 
 class TestCollectionData(unittest.TestCase):
     """CollectionData unit test stubs"""
@@ -36,7 +36,7 @@ class TestCollectionData(unittest.TestCase):
         if include_optional:
             return CollectionData(
                 collections = [
-                    arguflow.models.chunk_collection_and_file.ChunkCollectionAndFile(
+                    trieve_python_client.models.chunk_collection_and_file.ChunkCollectionAndFile(
                         author_id = '', 
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         description = '', 
@@ -50,7 +50,7 @@ class TestCollectionData(unittest.TestCase):
         else:
             return CollectionData(
                 collections = [
-                    arguflow.models.chunk_collection_and_file.ChunkCollectionAndFile(
+                    trieve_python_client.models.chunk_collection_and_file.ChunkCollectionAndFile(
                         author_id = '', 
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         description = '', 

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.invitation_data import InvitationData
+from trieve_python_client.models.invitation_data import InvitationData
 
 class TestInvitationData(unittest.TestCase):
     """InvitationData unit test stubs"""

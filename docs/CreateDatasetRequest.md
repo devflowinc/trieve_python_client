@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.create_dataset_request import CreateDatasetRequest
+from trieve_python_client.models.create_dataset_request import CreateDatasetRequest
 
 # TODO update the JSON string below
 json = "{}"

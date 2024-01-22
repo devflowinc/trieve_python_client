@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.user_collection_query import UserCollectionQuery
+from trieve_python_client.models.user_collection_query import UserCollectionQuery
 
 class TestUserCollectionQuery(unittest.TestCase):
     """UserCollectionQuery unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.chat_message_proxy import ChatMessageProxy
+from trieve_python_client.models.chat_message_proxy import ChatMessageProxy
 
 class TestChatMessageProxy(unittest.TestCase):
     """ChatMessageProxy unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.dataset_dto import DatasetDTO
+from trieve_python_client.models.dataset_dto import DatasetDTO
 
 class TestDatasetDTO(unittest.TestCase):
     """DatasetDTO unit test stubs"""

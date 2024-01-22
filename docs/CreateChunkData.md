@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.create_chunk_data import CreateChunkData
+from trieve_python_client.models.create_chunk_data import CreateChunkData
 
 # TODO update the JSON string below
 json = "{}"

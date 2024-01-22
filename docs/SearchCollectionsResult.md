@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.search_collections_result import SearchCollectionsResult
+from trieve_python_client.models.search_collections_result import SearchCollectionsResult
 
 # TODO update the JSON string below
 json = "{}"

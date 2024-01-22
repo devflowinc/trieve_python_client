@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.return_created_chunk import ReturnCreatedChunk
+from trieve_python_client.models.return_created_chunk import ReturnCreatedChunk
 
 class TestReturnCreatedChunk(unittest.TestCase):
     """ReturnCreatedChunk unit test stubs"""
@@ -35,7 +35,7 @@ class TestReturnCreatedChunk(unittest.TestCase):
         model = ReturnCreatedChunk()
         if include_optional:
             return ReturnCreatedChunk(
-                chunk_metadata = arguflow.models.chunk_metadata.ChunkMetadata(
+                chunk_metadata = trieve_python_client.models.chunk_metadata.ChunkMetadata(
                     author_id = '', 
                     chunk_html = '', 
                     content = '', 
@@ -54,7 +54,7 @@ class TestReturnCreatedChunk(unittest.TestCase):
             )
         else:
             return ReturnCreatedChunk(
-                chunk_metadata = arguflow.models.chunk_metadata.ChunkMetadata(
+                chunk_metadata = trieve_python_client.models.chunk_metadata.ChunkMetadata(
                     author_id = '', 
                     chunk_html = '', 
                     content = '', 

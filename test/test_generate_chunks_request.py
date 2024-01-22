@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.generate_chunks_request import GenerateChunksRequest
+from trieve_python_client.models.generate_chunks_request import GenerateChunksRequest
 
 class TestGenerateChunksRequest(unittest.TestCase):
     """GenerateChunksRequest unit test stubs"""
@@ -40,7 +40,7 @@ class TestGenerateChunksRequest(unittest.TestCase):
                     ],
                 model = '',
                 prev_messages = [
-                    arguflow.models.chat_message_proxy.ChatMessageProxy(
+                    trieve_python_client.models.chat_message_proxy.ChatMessageProxy(
                         content = '', 
                         role = '', )
                     ]
@@ -51,7 +51,7 @@ class TestGenerateChunksRequest(unittest.TestCase):
                     ''
                     ],
                 prev_messages = [
-                    arguflow.models.chat_message_proxy.ChatMessageProxy(
+                    trieve_python_client.models.chat_message_proxy.ChatMessageProxy(
                         content = '', 
                         role = '', )
                     ],

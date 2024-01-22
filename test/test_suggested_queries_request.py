@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.suggested_queries_request import SuggestedQueriesRequest
+from trieve_python_client.models.suggested_queries_request import SuggestedQueriesRequest
 
 class TestSuggestedQueriesRequest(unittest.TestCase):
     """SuggestedQueriesRequest unit test stubs"""

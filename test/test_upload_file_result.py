@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.upload_file_result import UploadFileResult
+from trieve_python_client.models.upload_file_result import UploadFileResult
 
 class TestUploadFileResult(unittest.TestCase):
     """UploadFileResult unit test stubs"""
@@ -35,7 +35,7 @@ class TestUploadFileResult(unittest.TestCase):
         model = UploadFileResult()
         if include_optional:
             return UploadFileResult(
-                file_metadata = arguflow.models.file.File(
+                file_metadata = trieve_python_client.models.file.File(
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     dataset_id = '', 
                     file_name = '', 
@@ -50,7 +50,7 @@ class TestUploadFileResult(unittest.TestCase):
             )
         else:
             return UploadFileResult(
-                file_metadata = arguflow.models.file.File(
+                file_metadata = trieve_python_client.models.file.File(
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     dataset_id = '', 
                     file_name = '', 

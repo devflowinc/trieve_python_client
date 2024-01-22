@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.delete_collection_data import DeleteCollectionData
+from trieve_python_client.models.delete_collection_data import DeleteCollectionData
 
 class TestDeleteCollectionData(unittest.TestCase):
     """DeleteCollectionData unit test stubs"""

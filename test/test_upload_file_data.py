@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.upload_file_data import UploadFileData
+from trieve_python_client.models.upload_file_data import UploadFileData
 
 class TestUploadFileData(unittest.TestCase):
     """UploadFileData unit test stubs"""

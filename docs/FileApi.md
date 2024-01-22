@@ -1,4 +1,4 @@
-# arguflow.FileApi
+# trieve_python_client.FileApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,21 +21,21 @@ delete_file  Delete a file from S3 attached to the server based on its id. This 
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.FileApi(api_client)
+    api_instance = trieve_python_client.FileApi(api_client)
     file_id = 'file_id_example' # str | The id of the file to delete
 
     try:
@@ -87,22 +87,22 @@ get_file  Download a file from S3 attached to the server based on its id. We pla
 
 
 ```python
-import arguflow
-from arguflow.models.file_dto import FileDTO
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.file_dto import FileDTO
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.FileApi(api_client)
+    api_instance = trieve_python_client.FileApi(api_client)
     file_id = 'file_id_example' # str | The id of the file to fetch
 
     try:
@@ -156,21 +156,21 @@ get_image_file  We strongly recommend not using this endpoint. It is disabled on
 
 
 ```python
-import arguflow
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.FileApi(api_client)
+    api_instance = trieve_python_client.FileApi(api_client)
     file_name = 'file_name_example' # str | The name of the image file to return
 
     try:
@@ -222,24 +222,24 @@ upload_file  Upload a file to S3 attached to the server. The file will be conver
 
 
 ```python
-import arguflow
-from arguflow.models.upload_file_data import UploadFileData
-from arguflow.models.upload_file_result import UploadFileResult
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.upload_file_data import UploadFileData
+from trieve_python_client.models.upload_file_result import UploadFileResult
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.FileApi(api_client)
-    upload_file_data = arguflow.UploadFileData() # UploadFileData | JSON request payload to upload a file
+    api_instance = trieve_python_client.FileApi(api_client)
+    upload_file_data = trieve_python_client.UploadFileData() # UploadFileData | JSON request payload to upload a file
 
     try:
         # upload_file

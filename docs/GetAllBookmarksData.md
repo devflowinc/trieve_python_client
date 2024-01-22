@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.get_all_bookmarks_data import GetAllBookmarksData
+from trieve_python_client.models.get_all_bookmarks_data import GetAllBookmarksData
 
 # TODO update the JSON string below
 json = "{}"

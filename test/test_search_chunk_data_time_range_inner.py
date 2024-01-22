@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.search_chunk_data_time_range_inner import SearchChunkDataTimeRangeInner
+from trieve_python_client.models.search_chunk_data_time_range_inner import SearchChunkDataTimeRangeInner
 
 class TestSearchChunkDataTimeRangeInner(unittest.TestCase):
     """SearchChunkDataTimeRangeInner unit test stubs"""

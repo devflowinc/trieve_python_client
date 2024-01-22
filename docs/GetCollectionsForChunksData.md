@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.get_collections_for_chunks_data import GetCollectionsForChunksData
+from trieve_python_client.models.get_collections_for_chunks_data import GetCollectionsForChunksData
 
 # TODO update the JSON string below
 json = "{}"

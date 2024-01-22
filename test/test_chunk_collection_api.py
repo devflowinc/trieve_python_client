@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.api.chunk_collection_api import ChunkCollectionApi
+from trieve_python_client.api.chunk_collection_api import ChunkCollectionApi
 
 
 class TestChunkCollectionApi(unittest.TestCase):

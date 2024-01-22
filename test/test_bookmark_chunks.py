@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.bookmark_chunks import BookmarkChunks
+from trieve_python_client.models.bookmark_chunks import BookmarkChunks
 
 class TestBookmarkChunks(unittest.TestCase):
     """BookmarkChunks unit test stubs"""
@@ -36,7 +36,7 @@ class TestBookmarkChunks(unittest.TestCase):
         if include_optional:
             return BookmarkChunks(
                 metadata = [
-                    arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                    trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                         author = null, 
                         chunk_html = '', 
                         content = '', 
@@ -57,7 +57,7 @@ class TestBookmarkChunks(unittest.TestCase):
         else:
             return BookmarkChunks(
                 metadata = [
-                    arguflow.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
+                    trieve_python_client.models.chunk_metadata_with_file_data.ChunkMetadataWithFileData(
                         author = null, 
                         chunk_html = '', 
                         content = '', 

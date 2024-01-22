@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.dataset_and_usage import DatasetAndUsage
+from trieve_python_client.models.dataset_and_usage import DatasetAndUsage
 
 # TODO update the JSON string below
 json = "{}"

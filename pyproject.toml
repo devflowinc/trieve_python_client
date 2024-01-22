@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "arguflow"
+name = "trieve_python_client"
 version = "1.0.0"
 description = "trieve-server"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
@@ -7,7 +7,7 @@ license = ""
 readme = "README.md"
 repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
 keywords = ["OpenAPI", "OpenAPI-Generator", "trieve-server"]
-include = ["arguflow/py.typed"]
+include = ["trieve_python_client/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -34,7 +34,7 @@ extension-pkg-whitelist = "pydantic"
 
 [tool.mypy]
 files = [
-  "arguflow",
+  "trieve_python_client",
   #"test",  # auto-generated tests
   "tests", # hand-written tests
 ]

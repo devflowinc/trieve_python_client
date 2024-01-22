@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.create_organization_data import CreateOrganizationData
+from trieve_python_client.models.create_organization_data import CreateOrganizationData
 
 class TestCreateOrganizationData(unittest.TestCase):
     """CreateOrganizationData unit test stubs"""

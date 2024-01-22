@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.create_dataset_request import CreateDatasetRequest
+from trieve_python_client.models.create_dataset_request import CreateDatasetRequest
 
 class TestCreateDatasetRequest(unittest.TestCase):
     """CreateDatasetRequest unit test stubs"""

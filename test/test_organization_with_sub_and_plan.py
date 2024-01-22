@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.organization_with_sub_and_plan import OrganizationWithSubAndPlan
+from trieve_python_client.models.organization_with_sub_and_plan import OrganizationWithSubAndPlan
 
 class TestOrganizationWithSubAndPlan(unittest.TestCase):
     """OrganizationWithSubAndPlan unit test stubs"""
@@ -38,7 +38,7 @@ class TestOrganizationWithSubAndPlan(unittest.TestCase):
                 created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 id = '',
                 name = '',
-                plan = arguflow.models.stripe_plan.StripePlan(
+                plan = trieve_python_client.models.stripe_plan.StripePlan(
                     amount = 56, 
                     chunk_count = 56, 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
@@ -51,7 +51,7 @@ class TestOrganizationWithSubAndPlan(unittest.TestCase):
                     updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     user_count = 56, ),
                 registerable = True,
-                subscription = arguflow.models.stripe_subscription.StripeSubscription(
+                subscription = trieve_python_client.models.stripe_subscription.StripeSubscription(
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     current_period_end = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     id = '', 

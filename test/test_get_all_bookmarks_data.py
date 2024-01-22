@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.get_all_bookmarks_data import GetAllBookmarksData
+from trieve_python_client.models.get_all_bookmarks_data import GetAllBookmarksData
 
 class TestGetAllBookmarksData(unittest.TestCase):
     """GetAllBookmarksData unit test stubs"""

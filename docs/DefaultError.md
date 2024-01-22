@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from arguflow.models.default_error import DefaultError
+from trieve_python_client.models.default_error import DefaultError
 
 # TODO update the JSON string below
 json = "{}"

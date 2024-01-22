@@ -1,4 +1,4 @@
-# arguflow.InvitationApi
+# trieve_python_client.InvitationApi
 
 All URIs are relative to *http://localhost*
 
@@ -18,23 +18,23 @@ send_invitation  Invitations act as a way to invite users to join an organizatio
 
 
 ```python
-import arguflow
-from arguflow.models.invitation_data import InvitationData
-from arguflow.rest import ApiException
+import trieve_python_client
+from trieve_python_client.models.invitation_data import InvitationData
+from trieve_python_client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = arguflow.Configuration(
+configuration = trieve_python_client.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with arguflow.ApiClient(configuration) as api_client:
+with trieve_python_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = arguflow.InvitationApi(api_client)
-    invitation_data = arguflow.InvitationData() # InvitationData | JSON request payload to send an invitation
+    api_instance = trieve_python_client.InvitationApi(api_client)
+    invitation_data = trieve_python_client.InvitationData() # InvitationData | JSON request payload to send an invitation
 
     try:
         # send_invitation

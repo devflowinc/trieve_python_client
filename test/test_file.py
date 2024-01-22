@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.file import File
+from trieve_python_client.models.file import File
 
 class TestFile(unittest.TestCase):
     """File unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from arguflow.models.dataset_and_usage import DatasetAndUsage
+from trieve_python_client.models.dataset_and_usage import DatasetAndUsage
 
 class TestDatasetAndUsage(unittest.TestCase):
     """DatasetAndUsage unit test stubs"""
@@ -35,28 +35,28 @@ class TestDatasetAndUsage(unittest.TestCase):
         model = DatasetAndUsage()
         if include_optional:
             return DatasetAndUsage(
-                dataset = arguflow.models.dataset_dto.DatasetDTO(
+                dataset = trieve_python_client.models.dataset_dto.DatasetDTO(
                     client_configuration = null, 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     id = '', 
                     name = '', 
                     organization_id = '', 
                     updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                dataset_usage = arguflow.models.dataset_usage_count.DatasetUsageCount(
+                dataset_usage = trieve_python_client.models.dataset_usage_count.DatasetUsageCount(
                     chunk_count = 56, 
                     dataset_id = '', 
                     id = '', )
             )
         else:
             return DatasetAndUsage(
-                dataset = arguflow.models.dataset_dto.DatasetDTO(
+                dataset = trieve_python_client.models.dataset_dto.DatasetDTO(
                     client_configuration = null, 
                     created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     id = '', 
                     name = '', 
                     organization_id = '', 
                     updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), ),
-                dataset_usage = arguflow.models.dataset_usage_count.DatasetUsageCount(
+                dataset_usage = trieve_python_client.models.dataset_usage_count.DatasetUsageCount(
                     chunk_count = 56, 
                     dataset_id = '', 
                     id = '', ),
